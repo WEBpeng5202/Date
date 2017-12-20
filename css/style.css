@@ -1,0 +1,61 @@
+@keyframes dong {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 50px;
+    }
+}
+@keyframes rotates {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+.box2{
+    position: relative;
+    top:0;
+    height: 50px;
+}
+.box2>span,.box2>div{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #6f68ff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.a{
+    width: 0;
+    height:20px;
+    background-color: #3eb4fa;
+    animation: dong 1s;
+    animation-iteration-count: infinite;
+    transition: .1s;
+}
+.b{
+    position: absolute;
+    top: -10px;
+    left: 70px;
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 10px solid #6f68ff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: rotates 1s linear;
+    animation-iteration-count: infinite;
+}
+.wrap{
+    width: 50px;
+    height: 20px;
+    border: 2px solid #befcff;
+}
